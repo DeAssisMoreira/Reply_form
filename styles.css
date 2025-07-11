@@ -1,0 +1,271 @@
+body {
+  font-family: "Prosto one", "Jost";
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 60px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.combined {
+  height: auto;
+  min-height: 488px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1480px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-section {
+  background-color: #6a50ba;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-image: url(./imgs/BG\ image.png);
+  background-repeat: no-repeat;
+  background-position: 600px 0;
+  flex: 8;
+}
+
+.prosto-one {
+  font-size: 42px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 20px 20px;
+}
+
+.jost {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Jost";
+  margin-left: 20px;
+  margin-top: -24px;
+  margin-bottom: 36px;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 500px;
+  font-family: inherit;
+}
+
+.form-group input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "jost";
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form-group input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "jost";
+}
+
+.form-group input:hover {
+  border: 1px solid white;
+  box-shadow: 0 0 0 1px #fb9505;
+}
+
+.form-group input:focus {
+  border: 1px solid white;
+  box-shadow: 0 0 0 1px #fb9505;
+}
+
+.form-group__check {
+  display: flex;
+}
+
+.form-group__check input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+  margin-top: 12px;
+}
+
+.form-group__check input[type="checkbox"]:hover {
+  border-color: #fb9505;
+}
+
+.form-group__check input[type="checkbox"]:active {
+  transform: scale(0.95);
+}
+
+.form-group__check input[type="checkbox"]:checked {
+  background-color: #6a50ba;
+  border-color: white;
+}
+
+.form-group__check input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ckeck__text {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "jost";
+}
+
+.instruction {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "jost";
+}
+
+.submit-btn {
+  background-color: #fb9505;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.callback-btn {
+  padding-left: 45px;
+  background-color: #8267d8;
+  color: white;
+  background-image: url(./imgs/tg.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 16px;
+}
+
+.callback-btn:hover {
+  background-color: #0b7dda;
+}
+
+.advantages-section {
+  background-color: #a689ff;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  flex: 5;
+}
+
+.advantages-section h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: 4px;
+  margin-bottom: 28px;
+  color: #ffffff;
+  font-family: "Prosto One";
+}
+
+.advantages-list {
+  list-style-type: none;
+  padding: 0;
+  color: #fff;
+  font-family: "jost";
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.advantages-list li {
+  padding: 10px 0;
+  padding-left: 70px;
+  position: relative;
+  font-size: 16px;
+}
+
+.advantages-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.advantages-list__first::before {
+  background-image: url(./imgs/first.svg);
+}
+
+.advantages-list__second::before {
+  background-image: url(./imgs/second.svg);
+}
+
+.advantages-list__third::before {
+  background-image: url(./imgs/third.svg);
+}
+
+.advantages-list__fourth::before {
+  background-image: url(./imgs/fourth.svg);
+}
+
+@import url("tablet.css") (max-width: 728px);
+@import url("mobile.css") (max-width: 340px);

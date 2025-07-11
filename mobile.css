@@ -1,0 +1,52 @@
+@media (max-width: 340px) {
+  .container {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  .prosto-one {
+    font-size: 26px;
+    margin: 10px 10px;
+  }
+
+  .jost {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+  }
+
+  .application-form {
+    gap: 15px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .callback-btn {
+    padding-left: 45px;
+    background-position: 15px center;
+  }
+
+  .advantages-section h2 {
+    font-size: 22px;
+  }
+
+  .advantages-list li {
+    padding-left: 50px;
+    font-size: 14px;
+  }
+
+  .advantages-list li::before {
+    width: 36px;
+    height: 36px;
+    background-size: 18px 18px;
+  }
+}
